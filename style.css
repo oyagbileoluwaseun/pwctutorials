@@ -1,0 +1,10 @@
+body{
+    background-color: gainsboro;
+}
+table, th, td {
+    border: 1px solid black;
+}
+h2 {
+    text-align: center;
+    color: yellow;
+}
