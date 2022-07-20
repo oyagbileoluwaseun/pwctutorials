@@ -1,26 +1,26 @@
 // //function
-// function addNum(a, b) {
-//     return a + b
-// }
-// console.log(addNum(3, 2));
+function addNum(a, b) {
+    return a + b
+}
+console.log(addNum(3, 2));
 
 // //substract
-// function subNum(a, b) {
-//     return a - b
-// }
-// console.log(subNum(3, 2));
+function subNum(a, b) {
+    return a - b
+}
+console.log(subNum(3, 2));
 
 // //division
-// function divNum(a, b) {
-//     return a / b
-// }
-// console.log(divNum(3, 2));
+function divNum(a, b) {
+    return a / b
+}
+console.log(divNum(3, 2));
 
 // //multiply
-// function mulNum(a, b) {
-//     return a * b
-// }
-// console.log(mulNum(3, 2));
+function mulNum(a, b) {
+    return a * b
+}
+console.log(mulNum(3, 2));
 
 //arrow function
 const addNum = (a, b) => {
