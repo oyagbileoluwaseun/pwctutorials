@@ -4,54 +4,88 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
+    <!-- Header -->
     <a href="index.html">Home</a>|
     <a href="contactus.html">Contact Us</a>|
     <a href="gallery.html">Gallery</a>|
     <a href="applicationform.html">Application Form</a>|
     <a href="aboutus.html">About Us</a>|
     <a href="studentsdata.html">Students Data</a>|
+
     <h1><img src="pwc.svg" width="40" height="40" /> PwC Student Website</h1>
     <h2>PwC Auditing Firm</h2>
-    <form action="">
+
+    <!-- Form -->
+    <div class="applicationformdiv">
+    <div>
+    <form id="my-applicationForm" action="">
+      <div class="msg"></div>
+      <!-- First and Second Name -->
       <label for="fname">First name:</label><br>
       <input type="text" id="fname" name="fname" ><br>
       <label for="lname">Second name:</label><br>
       <input type="text" id="lname" name="lname"><br>
-      <label for="lage">Age:</label><br>
-      <input type="number" id="lage" name="age"><br><br/>
-      <label for="lage">Gender</label><br>
-      <input type="radio" id="html" name="fav_language" value="HTML">
-      <label for="html">Male</label><br/>
-      <input type="radio" id="css" name="fav_language" value="CSS">
-      <label for="css">Female</label><br/><br/>
 
+      <!-- Age -->
+      <label for="lage">Age:</label><br>
+      <input type="number" id="age" name="age"><br><br/>
+
+      <!-- Gender -->
+      <label for="lage">Gender</label><br>
+      <label>
+        <input type="radio" name="gender" value="Male">
+        Male
+      </label>
+      <label>
+        <input type="radio" name="gender" value="Female">
+        Female
+      </label><br/><br/>
+      
+      <!-- States -->
       <label for="state">State</label><br/>     
       <select name="sate" id="state">
-        <option value="abia">Abia</option>
-        <option value="adamawa">Adamawa</option>
-        <option value="akwaibom">Akwa Ibom</option>
-        <option value="anambr">Anambra</option>
-        <option value="bayelsa">Bayelsa</option>
-        <option value="borno">Borno</option>
-        <option value="anambr">Anambra</option>
-        <option value="crossriver">Cross River</option>
-        <option value="delta">Delta</option>
-        <option value="ebonyi">Ebonyi</option>
-        <option value="ondo">Ondo</option>
+        <option value="">Select an option</option>
+        <option value="Abia">Abia</option>
+        <option value="Adamawa">Adamawa</option>
+        <option value="Akwaibom">Akwa Ibom</option>
+        <option value="Anambra">Anambra</option>
+        <option value="Bayelsa">Bayelsa</option>
+        <option value="Borno">Borno</option>
+        <option value="Anambra">Anambra</option>
+        <option value="Cross River">Cross River</option>
+        <option value="Delta">Delta</option>
+        <option value="Ebonyi">Ebonyi</option>
+        <option value="Ondo">Ondo</option>
         <option value="Osun">Osun</option>
       </select><br/><br/>
 
-      <label for="courses">Course</label><br/>
-      <input type="checkbox" id="javascript" name="javascript" value="javascript">
-      <label for="vehicle1">Javascript</label><br>
-      <input type="checkbox" id="agile" name="agile" value="agile">
-      <label for="agile">Agile</label><br>
-      <input type="checkbox" id="c" name="c" value="c">
-      <label for="c">C#</label><br>
-      <input type="checkbox" id="dataanalysis" name="dataanalysis" value="dataanalysis">
-      <label for="dataanalysis">Data Analysis</label><br><br/>
+      <!-- Courses -->
+      <label for="courses">Course</label><br />
+      <label>
+        <input type="checkbox" name="settings" value="Javascript">
+        Javascript
+      </label>
+      <label>
+        <input type="checkbox" name="settings" value="Agile">
+        Agile
+      </label>
+      <label>
+        <input type="checkbox" name="settings" value="C#">
+        C#
+      </label>
+      <label>
+        <input type="checkbox" name="settings" value="Data Analysis">
+        Data Analysis
+      </label><br/><br/>
 
+      <!-- Submit -->
       <input type="submit" value="Submit" style="cursor: pointer;">
     </form>
+  </div>
+    
+    <div id="users">
+      <p> Form Feedback</p>
+    </div></div>
+    <script src="DomAssignment.js"></script>
   </body>
 </html>
